@@ -1,0 +1,83 @@
+/* PricingCard.css */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #19042e; 
+    color: white;
+}
+
+.light-mode {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.card {
+    background-color: #362747;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.3s ease;
+    border: 1px solid grey; 
+}
+
+.light-mode .card {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid grey; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid grey;
+}
+
+th {
+    font-weight: bold;
+    background-color: #5a57ff;
+    color: white;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td:first-child:last-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+
+.card h2, .card h3 {
+    color: pink;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
